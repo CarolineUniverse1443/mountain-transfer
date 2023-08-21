@@ -1,0 +1,26 @@
+.main-page
+{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.header
+{
+	background: #2B80B9;
+	flex-grow: 0;
+}
+
+.header a { color: white;  }
+
+.main
+{
+	flex: 1 0 auto;
+}
+
+.footer
+{
+	background: #2B80B9;
+	color: #FFFFFF;
+	flex-grow: 0;
+}

@@ -1,0 +1,44 @@
+*
+{
+	box-sizing: border-box;
+}
+
+.container
+{
+	max-width: 1920px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+html, body
+{
+	scroll-behavior: smooth;
+}
+
+body
+{
+	min-width: 320px;
+	min-height: 100vh;
+	overflow-y: scroll;
+	margin: 0;
+	font-family: 'Open Sans';
+}
+
+a
+{
+	color: black;
+	text-decoration: none;
+}
+
+a::visited { color: black; }
+
+@media (min-width: 728px)
+{
+	.container { padding: 0 20px; }
+}
+
+@media (min-width: 1920px)
+{
+	.container { padding: 0 270px; }
+}
