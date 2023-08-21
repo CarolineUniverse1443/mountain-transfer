@@ -1,21 +1,92 @@
+@font-face
+{
+	font-family: 'Idealist-Sans';
+	src: url('../fonts/IdealistSans/IdealistSans.ttf');
+}
+
 .main-page
 {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	background: #F3F5FB;
+	color: #222;
 }
 
 .header
 {
 	background: #2B80B9;
+	color: #FFF;
 	flex-grow: 0;
+	padding: 6px 10px;
+	margin-bottom: 10px;
 }
 
-.header a { color: white;  }
+.header .container { padding: 0; }
+
+.header-wrapper
+{
+	display: flex;
+	align-items: center;
+	font-size: 26px;
+	line-height: 34px;
+}
+
+.header__logo
+{
+	display: flex;
+	align-items: center;
+}
+
+.header__logo-image
+{
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+}
+
+.main-page__logo-text
+{
+	font-family: 'Idealist-Sans';
+	color: #FFF;
+	font-weight: 400;
+}
 
 .main
 {
 	flex: 1 0 auto;
+	margin-bottom: 50px;
+}
+
+.main-page__section:not(:last-child)
+{
+	margin-bottom: 30px;
+}
+
+.main-page__title
+{
+	margin-bottom: 15px;
+}
+
+.main-page__section-title
+{
+	margin-bottom: 15px;
+}
+
+.main-page__text:not(:last-child)
+{
+	margin-bottom: 10px;
+}
+
+.intro .main-page__text { margin-bottom: 0; }
+.intro .main-page__text:first-child { margin-bottom: 30px; }
+
+.gallery .main-page__section-title { margin-bottom: 30px; }
+
+.main-page__section-tel
+{
+	display: inline-block;
+	color: #222;
 }
 
 .footer
@@ -23,4 +94,39 @@
 	background: #2B80B9;
 	color: #FFFFFF;
 	flex-grow: 0;
+}
+
+.footer-wrapper
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px 0 30px;
+}
+
+.footer__logo
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.footer__logo-image
+{
+	width: 40px;
+	height: 40px;
+	margin-right: 15px;
+}
+
+.footer .main-page__logo-text
+{
+	font-size: 26px;
+	line-height: 34px;
+}
+
+.footer__copyright
+{
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 300;
 }
