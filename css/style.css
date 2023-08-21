@@ -45,6 +45,11 @@
 	margin-right: 10px;
 }
 
+.header__nav
+{
+	display: none;
+}
+
 .main-page__logo-text
 {
 	font-family: 'Idealist-Sans';
@@ -202,4 +207,72 @@
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 300;
+}
+
+@media (min-width: 768px)
+{
+	.header
+	{
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+
+	.header__nav
+	{
+		display: flex;
+		flex-grow: 1;
+		align-items: center;
+		justify-content: center;
+		gap: 16px;
+	}
+
+	.header__nav-link
+	{
+		color: #FFF;
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 600;
+	}
+
+	.main-page__title
+	{
+		font-size: 26px;
+		line-height: 35px;
+		margin-bottom: 20px;
+	}
+
+	.main-page__text
+	{
+		font-size: 15px;
+	}
+
+	.intro__pic
+	{
+		object-fit: cover;
+		object-position: bottom;
+		aspect-ratio: 16 / 7;
+	}
+
+	.intro__images
+	{
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 18px;
+	}
+	
+	.intro__images img
+	{
+		width: calc(50% - 18px);
+		aspect-ratio: 152 / 100;
+	}
+
+	.intro__images img:last-child
+	{
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+		aspect-ratio: 16 / 7;
+	}
+
+
 }

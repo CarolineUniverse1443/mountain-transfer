@@ -75,7 +75,7 @@ a
 
 a:visited { color: inherit; }
 
-@media (min-width: 728px)
+@media (min-width: 768px)
 {
 	.container { padding: 0 20px; }
 }
