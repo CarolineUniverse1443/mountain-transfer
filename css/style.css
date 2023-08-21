@@ -141,6 +141,7 @@
 {
 	display: inline-block;
 	color: #222;
+	font-weight: 600;
 }
 
 .contacts-wrapper
@@ -154,9 +155,17 @@
 	margin-bottom: 30px;
 }
 
+.contacts__list-text
+{
+	display: block;
+}
+
 .contacts__map
 {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
 
 .contacts__map iframe
