@@ -241,9 +241,21 @@
 		margin-bottom: 20px;
 	}
 
+	.main-page__section-title
+	{
+		font-size: 22px;
+		line-height: 27px;
+		margin-bottom: 18px;
+	}
+
 	.main-page__text
 	{
 		font-size: 15px;
+	}
+
+	.main-page__text:not(:last-child)
+	{
+		margin-bottom: 12px;
 	}
 
 	.intro__pic
@@ -264,6 +276,7 @@
 	{
 		width: calc(50% - 18px);
 		aspect-ratio: 152 / 100;
+		flex-grow: 1;
 	}
 
 	.intro__images img:last-child
@@ -274,5 +287,37 @@
 		aspect-ratio: 16 / 7;
 	}
 
+	.services__list li
+	{
+		font-size: 15px;
+		line-height: 24px;
+	}
+
+	.services__pic
+	{
+		object-fit: cover;
+		object-position: 0 -40px;
+		aspect-ratio: 16 / 7;
+	}
+
+	.gallery__list
+	{
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 18px;
+	}
+
+	.gallery__list img
+	{
+		width: calc(50% - 18px);
+		aspect-ratio: 152 / 100;
+		flex-grow: 1;
+	}
+
+	.gallery__list-waterfall
+	{
+		width: calc(50% - 9px);
+		gap: 18px;
+	}
 
 }
