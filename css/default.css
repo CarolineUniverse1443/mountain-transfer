@@ -80,6 +80,11 @@ a:visited { color: inherit; }
 	.container { padding: 0 20px; }
 }
 
+@media (min-width: 1440px)
+{
+	.container { padding: 0 70px; }
+}
+
 @media (min-width: 1920px)
 {
 	.container { padding: 0 270px; }
