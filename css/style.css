@@ -139,11 +139,17 @@
 	flex-grow: 1;
 }
 
-.main-page__section-tel
+.contacts__tel
 {
 	display: inline-block;
 	color: #222;
 	font-weight: 600;
+	transition: .3s all ease;
+}
+
+.contacts__tel:hover
+{
+	color: #2B80B9;
 }
 
 .contacts-wrapper
@@ -174,6 +180,7 @@
 {
 	width: 100%;
 	height: 215px;
+	border: 0;
 	border-radius: 10px;
 	box-shadow: 2px 2px 5px 0px rgba(64, 64, 64, 0.20);
 }
@@ -270,6 +277,13 @@
 		font-size: 16px;
 		line-height: 22px;
 		font-weight: 600;
+		border-bottom: 2px solid transparent;
+		transition: .3s all ease;
+	}
+
+	.header__nav-link:hover
+	{
+		border-bottom: 2px solid #FFFFFF;
 	}
 
 	.main
