@@ -68,6 +68,11 @@ ul li
 	padding: 0;
 }
 
+img
+{
+	user-select: none;
+}
+
 a
 {
 	text-decoration: none;
