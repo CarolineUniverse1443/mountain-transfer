@@ -18,7 +18,7 @@
 	<link type="image/x-icon" href="./img/favicon.ico" rel="shortcut icon">
 	<title>Mountain Transfer - поездки в Грузию</title>
 	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
+	<script type="text/javascript" defer>
 		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 		m[i].l=1*new Date();
 		for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -45,20 +45,26 @@
 						<span class="main-page__logo-text">Mountain <br> Transfer<span>
 					</a>
 
+					<div class="header__burger" onclick="menuToggle()">
+						<div class="header__burger-wr">
+							<div class="header__burger-line"></div>
+						</div>
+					</div>
+
 					<nav class="header__nav">
-						<a href="#intro" class="header__nav-link">
+						<a href="#intro" class="header__nav-link" onclick="menuToggle()">
 							Трансфер
 						</a>
-						<a href="#services" class="header__nav-link">
+						<a href="#services" class="header__nav-link" onclick="menuToggle()">
 							Наши услуги
 						</a>
-						<a href="#description" class="header__nav-link">
+						<a href="#description" class="header__nav-link" onclick="menuToggle()">
 							Описание
 						</a>
-						<a href="#gallery" class="header__nav-link">
+						<a href="#gallery" class="header__nav-link" onclick="menuToggle()">
 							Фотогалерея
 						</a>
-						<a href="#contacts" class="header__nav-link">
+						<a href="#contacts" class="header__nav-link" onclick="menuToggle()">
 							Контакты
 						</a>
 					</nav>
@@ -158,7 +164,7 @@
 									Место сбора во Владикавказе:
 									<span class="contacts__list-text">напротив здания ГМТ</span>
 								</p>
-								<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A833329d6fc0bb004831ebb08f553e315832868f3a5429a48676c2af38b73a327&amp;source=constructor" width="500" height="400" title="Карта места сбора пассажиров во Владикавказе"></iframe>
+								<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A833329d6fc0bb004831ebb08f553e315832868f3a5429a48676c2af38b73a327&amp;source=constructor" width="500" height="400" loading="lazy" title="Карта места сбора пассажиров во Владикавказе"></iframe>
 							</div>
 							<div class="contacts__map-item">
 								<p class="main-page__text">
@@ -166,7 +172,7 @@
 									<span class="contacts__list-text">Макдональдс возле станции метро “Руставели” </span>
 									<span class="contacts__list-text">Время сбора: с 6.30 до 7.30 </span>
 								</p>
-								<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acf76de373e537f6a0447dacfb8c355ad495e1a4e02770b850b6df538e3fd508e&amp;source=constructor" width="500" height="400" title="Карта места сбора пассажиров в Тбилиси"></iframe>
+								<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acf76de373e537f6a0447dacfb8c355ad495e1a4e02770b850b6df538e3fd508e&amp;source=constructor" width="500" height="400" loading="lazy" title="Карта места сбора пассажиров в Тбилиси"></iframe>
 							</div>
 						</div>
 					</div>
@@ -186,5 +192,6 @@
 			</div>
 		</footer>
 	</div>
+	<script src="./js/main.js"></script>
 </body>
 </html>

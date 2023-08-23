@@ -2,6 +2,7 @@
 {
 	font-family: 'Idealist-Sans';
 	src: url('../fonts/IdealistSans/IdealistSans.ttf');
+	font-display: swap;
 }
 
 .main-page
@@ -20,12 +21,15 @@
 	flex-grow: 0;
 	padding: 6px 10px;
 	margin-bottom: 10px;
+	overflow: hidden;
 }
 
 .header-wrapper
 {
+	position: relative;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .header__logo
@@ -47,9 +51,115 @@
 	margin-right: 10px;
 }
 
+/* mobile menu */
+
+.header__burger
+{
+	padding: 6px 5px;
+}
+
+.header__burger:active
+{
+	background-color: rgba(120, 179, 219, 0.70);
+	border-radius: 3px;
+}
+
+.header__burger-wr
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 19px;
+}
+
+.header__burger-line
+{
+	background-color: #FFF;
+	width: 25px;
+	height: 3px;
+	transition: all .3s ease;
+}
+
+.header__burger-line:after,
+.header__burger-line:before
+{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: #FFF;
+    left: 0;
+    transition: all .3s ease;
+}
+
+.header__burger-line:before
+{
+    top: 0;
+}
+
+.header__burger-line:after
+{
+    bottom: 0;
+}
+
+.header__burger.active .header__burger-line
+{
+	background-color: transparent;
+}
+
+.header__burger.active .header__burger-line:before,
+.header__burger.active .header__burger-line:after
+{
+	top: 50%;
+    left: 50%;
+}
+
+.header__burger.active .header__burger-line:before
+{
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.header__burger.active .header__burger-line:after
+{
+	transform: translate(-50%,-50%) rotate(135deg);
+}
+
+/* mobile menu */
+
 .header__nav
 {
-	display: none;
+	display: flex;
+	position: absolute;
+	padding: 15px 5px;
+	background: #F3F5FB;
+	width: 100%;
+	height: 100vh;
+	flex-direction: column;
+	visibility: hidden;
+    opacity: 0;
+	top: 109%;
+	left: 103%;
+	transition: .5s all ease;
+}
+
+.header__nav-link
+{
+	color: #1F618D;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 600;
+	padding: 15px 0;
+	border-bottom: 1px solid #1F618D;
+	transition: .3s all ease;
+}
+
+.header__burger.active + .header__nav
+{
+	left: 0;
+	opacity: 1;
+    visibility: visible;
+    z-index: 10;
 }
 
 .main-page__logo-text
@@ -262,21 +372,28 @@
 		height: 70px;
 	}
 
+	.header__burger { display: none; }
+
 	.header__nav
 	{
-		display: flex;
+		flex-direction: row;
 		flex-grow: 1;
 		align-items: center;
 		justify-content: center;
 		gap: 16px;
+		position: static;
+		padding: 0;
+		background: none;
+		width: auto;
+		height: auto;
+		visibility: visible;
+		opacity: 1;
 	}
 
 	.header__nav-link
 	{
 		color: #FFF;
-		font-size: 16px;
-		line-height: 22px;
-		font-weight: 600;
+		padding: 0;
 		border-bottom: 2px solid transparent;
 		transition: .3s all ease;
 	}
