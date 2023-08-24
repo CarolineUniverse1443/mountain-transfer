@@ -12,12 +12,12 @@
 		http-equiv="Content-Security-Policy" 
 		content="
 				default-src 'self';
-				connect-src 'self' https://mc.yandex.ru;
+				connect-src 'self' https://api.yandex.ru https://mc.yandex.ru https://yandex.ru;
 				frame-src 'self' yandex.ru;
 				base-uri 'self';
 				font-src 'self' fonts.gstatic.com;  
-				img-src 'self' data:;
-				script-src 'self' mc.yandex.ru 'unsafe-inline'; 
+				img-src 'self' https://mc.yandex.com data:;
+				script-src 'self' mc.yandex.ru https://yandex.ru 'unsafe-inline'; 
 				style-src 'self' 'unsafe-inline' cdn.jsdelivr.net;
 				upgrade-insecure-requests;"
 	>
