@@ -69,6 +69,11 @@ ul li
 	padding: 0;
 }
 
+img
+{
+	height: auto;
+}
+
 img,
 iframe
 {

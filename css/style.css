@@ -177,7 +177,12 @@
 
 .main-page__section:not(:last-child)
 {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+}
+
+.main-page__section:not(:first-of-type)
+{
+	padding-top: 10px;
 }
 
 .main-page__title
@@ -339,7 +344,6 @@
 {
 	font-size: 16px;
 	line-height: 22px;
-	font-weight: 300;
 }
 
 @media (max-width: 1439px)
@@ -566,11 +570,6 @@
 		font-size: 28px;
 		line-height: 37px;
 	}
-
-	.footer__copyright
-	{
-		font-weight: 400;
-	}
 }
 
 @media (min-width: 1440px)
@@ -607,7 +606,7 @@
 
 	.main-page__section:not(:last-child)
 	{
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
 
 	.main-page__title
