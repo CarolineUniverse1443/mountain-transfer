@@ -10,11 +10,14 @@
 	<meta name="yandex-verification" content="0d1db8084d8df693" />
 	<meta 
 		http-equiv="Content-Security-Policy" 
-		content="default-src 'self';
+		content="
+				default-src 'self';
+				connect-src 'self' https://mc.yandex.ru;
+				frame-src 'self' yandex.ru;
 				base-uri 'self';
 				font-src 'self' fonts.gstatic.com;  
 				img-src 'self' data:;
-				script-src 'self';   
+				script-src 'self' mc.yandex.ru 'unsafe-inline'; 
 				style-src 'self' 'unsafe-inline' cdn.jsdelivr.net;
 				upgrade-insecure-requests;"
 	>
