@@ -1,28 +1,4 @@
 User-agent: *
-Disallow:
+Allow: /
 
 Sitemap: https://www.mountain-transfer.ru/sitemap.xml
-
-User-agent: Yandex
-Crawl-delay: 1
-
-User-agent: Googlebot
-Crawl-delay: 1
-
-User-agent: Bingbot
-Crawl-delay: 1
-
-User-agent: Ask Jeeves/Teoma
-Crawl-delay: 1
-
-User-agent: Slurp
-Disallow: /
-
-User-agent: Demo
-Disallow: /
-
-User-agent: Mediapartners-Google*
-Disallow:
-
-User-agent: *
-Crawl-delay: 5
