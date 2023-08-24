@@ -5,6 +5,7 @@ let isOpen = false;
 
 const menuToggle = function()
 {
+    if (window.innerWidth >= 768) return;
     isOpen = !isOpen;
 
     if(isOpen)
