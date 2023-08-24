@@ -5,10 +5,7 @@
 	font-display: swap;
 }
 
-*
-{
-	box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 .container
 {
@@ -18,10 +15,7 @@
 	margin: 0 auto;
 }
 
-html, body
-{
-	scroll-behavior: smooth;
-}
+html, body { scroll-behavior: smooth; }
 
 body
 {
@@ -69,21 +63,11 @@ ul li
 	padding: 0;
 }
 
-img
-{
-	height: auto;
-}
+img { height: auto; }
 
-img,
-iframe
-{
-	user-select: none;
-}
+img, iframe { user-select: none; }
 
-a
-{
-	text-decoration: none;
-}
+a { text-decoration: none; }
 
 /* a:visited { color: inherit; } */
 

@@ -53,10 +53,7 @@
 
 /* mobile menu */
 
-.header__burger
-{
-	padding: 6px 5px;
-}
+.header__burger { padding: 6px 5px; }
 
 .header__burger:active
 {
@@ -93,20 +90,11 @@
     transition: all .3s ease;
 }
 
-.header__burger-line:before
-{
-    top: 0;
-}
+.header__burger-line:before { top: 0; }
 
-.header__burger-line:after
-{
-    bottom: 0;
-}
+.header__burger-line:after { bottom: 0; }
 
-.header__burger.active .header__burger-line
-{
-	background-color: transparent;
-}
+.header__burger.active .header__burger-line { background-color: transparent; }
 
 .header__burger.active .header__burger-line:before,
 .header__burger.active .header__burger-line:after
@@ -115,15 +103,9 @@
     left: 50%;
 }
 
-.header__burger.active .header__burger-line:before
-{
-	transform: translate(-50%,-50%) rotate(45deg);
-}
+.header__burger.active .header__burger-line:before { transform: translate(-50%,-50%) rotate(45deg); }
 
-.header__burger.active .header__burger-line:after
-{
-	transform: translate(-50%,-50%) rotate(135deg);
-}
+.header__burger.active .header__burger-line:after { transform: translate(-50%,-50%) rotate(135deg); }
 
 /* mobile menu */
 
@@ -175,25 +157,13 @@
 	margin-bottom: 50px;
 }
 
-.main-page__section:not(:last-child)
-{
-	margin-bottom: 20px;
-}
+.main-page__section:not(:last-child) { margin-bottom: 20px; }
 
-.main-page__section:not(:first-of-type)
-{
-	padding-top: 10px;
-}
+.main-page__section:not(:first-of-type) { padding-top: 10px; }
 
-.main-page__title
-{
-	margin-bottom: 15px;
-}
+.main-page__title { margin-bottom: 15px; }
 
-.main-page__section-title
-{
-	margin-bottom: 15px;
-}
+.main-page__section-title { margin-bottom: 15px; }
 
 .main-page__section img
 {
@@ -201,17 +171,11 @@
 	width: 100%;
 }
 
-.main-page__text:not(:last-child)
-{
-	margin-bottom: 10px;
-}
+.main-page__text:not(:last-child) { margin-bottom: 10px; }
 
 .intro .main-page__text { margin-bottom: 30px; }
 
-.intro__pic
-{
-	margin-bottom: 30px;
-}
+.intro__pic { margin-bottom: 30px; }
 
 .intro__images
 {
@@ -222,15 +186,9 @@
 
 .description .main-page__text:first-of-type { margin-bottom: 30px; }
 
-.services__list
-{
-	margin-bottom: 30px;
-}
+.services__list { margin-bottom: 30px; }
 
-.description__pic
-{
-	margin-bottom: 30px;
-}
+.description__pic { margin-bottom: 30px; }
 
 .gallery .main-page__section-title { margin-bottom: 30px; }
 
@@ -262,10 +220,7 @@
 	transition: .3s all ease;
 }
 
-.contacts__tel:hover
-{
-	color: #2B80B9;
-}
+.contacts__tel:hover { color: #2B80B9; }
 
 .contacts-wrapper
 {
@@ -273,15 +228,9 @@
 	flex-direction: column;
 }
 
-.contacts__list
-{
-	margin-bottom: 20px;
-}
+.contacts__list { margin-bottom: 20px; }
 
-.contacts__list-text
-{
-	display: block;
-}
+.contacts__list-text { display: block; }
 
 .contacts__map
 {
@@ -300,10 +249,7 @@
 	box-shadow: 2px 2px 5px 0px rgba(64, 64, 64, 0.20);
 }
 
-.contacts__map-item .main-page__text
-{
-	margin-bottom: 20px;
-}
+.contacts__map-item .main-page__text { margin-bottom: 20px; }
 
 .footer
 {
@@ -359,10 +305,7 @@
 		margin-bottom: 20px;
 	}
 
-	.header__logo
-	{
-		margin-right: 10px;
-	}
+	.header__logo { margin-right: 10px; }
 
 	.header__logo .main-page__logo-text
 	{
@@ -402,15 +345,9 @@
 		transition: .3s all ease;
 	}
 
-	.header__nav-link:hover
-	{
-		border-bottom: 2px solid #FFFFFF;
-	}
+	.header__nav-link:hover { border-bottom: 2px solid #FFFFFF; }
 
-	.main
-	{
-		margin-bottom: 60px;
-	}
+	.main { margin-bottom: 60px; }
 
 	.main-page__title
 	{
@@ -426,20 +363,11 @@
 		margin-bottom: 18px;
 	}
 
-	.main-page__text
-	{
-		font-size: 15px;
-	}
+	.main-page__text { font-size: 15px; }
 
-	.main-page__text:not(:last-child)
-	{
-		margin-bottom: 12px;
-	}
+	.main-page__text:not(:last-child) { margin-bottom: 12px; }
 
-	.intro .main-page__text
-	{
-		margin-bottom: 30px;
-	}
+	.intro .main-page__text { margin-bottom: 30px; }
 
 	.intro__pic
 	{
@@ -470,10 +398,7 @@
 		aspect-ratio: 16 / 7;
 	}
 
-	.services__list
-	{
-		padding-left: 20px;
-	}
+	.services__list { padding-left: 20px; }
 
 	.services__list li
 	{
@@ -527,10 +452,7 @@
 		gap: 18px;
 	}
 
-	.contacts__map iframe
-	{
-		height: 240px;
-	}
+	.contacts__map iframe { height: 240px; }
 
 	.contacts__map-item
 	{
@@ -553,10 +475,7 @@
 		justify-content: space-between;
 	}
 	
-	.footer__logo
-	{
-		margin-bottom: 0;
-	}
+	.footer__logo { margin-bottom: 0; }
 
 	.footer__logo-image
 	{
@@ -588,10 +507,7 @@
 		line-height: 39px;
 	}
 
-	.header__nav
-	{
-		gap: 40px;
-	}
+	.header__nav { gap: 40px; }
 
 	.header__nav-link
 	{
@@ -599,15 +515,9 @@
 		line-height: 25px;
 	}
 
-	.main
-	{
-		margin-bottom: 80px;
-	}
+	.main { margin-bottom: 80px; }
 
-	.main-page__section:not(:last-child)
-	{
-		margin-bottom: 30px;
-	}
+	.main-page__section:not(:last-child) { margin-bottom: 30px; }
 
 	.main-page__title
 	{
@@ -629,10 +539,7 @@
 		line-height: 25px;
 	}
 
-	.intro .main-page__text
-	{
-		margin-bottom: 40px;
-	}
+	.intro .main-page__text { margin-bottom: 40px; }
 
 	.intro__pic
 	{
@@ -640,10 +547,7 @@
 		aspect-ratio: 240 / 100;
 	}
 
-	.intro__images
-	{
-		gap: 24px;
-	}
+	.intro__images { gap: 24px; }
 
 	.intro__images img,
 	.intro__images img:last-child
@@ -666,10 +570,7 @@
 
 	.description .main-page__text:first-of-type { margin-bottom: 40px; }
 
-	.description .main-page__text:not(:first-of-type, :last-child)
-	{
-		margin-bottom: 16px;
-	}
+	.description .main-page__text:not(:first-of-type, :last-child) { margin-bottom: 16px; }
 
 	.description__pic
 	{
@@ -681,10 +582,7 @@
 
 	.gallery .main-page__section-title { margin-bottom: 40px; }
 
-	.gallery__list
-	{
-		gap: 24px;
-	}
+	.gallery__list { gap: 24px; }
 
 	.gallery__list img
 	{
@@ -706,30 +604,15 @@
 		gap: 24px;
 	}
 
-	.contacts__map
-	{
-		gap: 24px;
-	}
+	.contacts__map { gap: 24px; }
 
-	.contacts__map-item
-	{
-		flex-basis: calc(50% - 24px);
-	}
+	.contacts__map-item { flex-basis: calc(50% - 24px); }
 
-	.contacts__map-item .main-page__text
-	{
-		margin-bottom: 30px;
-	}
+	.contacts__map-item .main-page__text { margin-bottom: 30px; }
 
-	.contacts__map iframe
-	{
-		height: 350px;
-	}
+	.contacts__map iframe { height: 350px; }
 
-	.footer-wrapper
-	{
-		padding: 15px 0;
-	}
+	.footer-wrapper { padding: 15px 0; }
 
 	.footer__logo-image
 	{
