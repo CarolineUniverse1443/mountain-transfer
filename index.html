@@ -71,6 +71,17 @@
 		</div>
 	</noscript>
 	<!-- /Yandex.Metrika counter -->
+
+	<!-- redirect to https -->
+	<script>
+		window.onload = () =>
+		{
+			if (window.location.protocol != "https:")
+			{
+				window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+			}
+		};
+	</script>
 </head>
 <body>
 	<span style="font-size: 0px; display: block;">.</span>
